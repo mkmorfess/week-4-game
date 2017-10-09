@@ -1,44 +1,58 @@
 <!DOCTYPE html>
-	<html lang="en">
-		<meta charset="UTF-8">
-		<head>
-			<title>Star Wars RPG</title>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+	<title>Crystal Collector</title>
 
-			<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-			<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-			<script type="text/javascript" src="assets/javascript/game.js"></script>
-			<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 
-		</head>
-		<body class="pageBackground">
+</head>
+<body>
+<div>
+<div>
+<h1>Crystals Collector!</h1>
+</div>
+<div class="wrapperInstructions">
+<p>You will be given a random number at the state of the game.</p>
+<p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score</p>
+<p>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.</p>
+<p>The value of each crystal is hidden from you until you click on it.</p>
+<p>Each time when the game starts, the game will change the values of each crystals. Good Luck! </p>
+</div>
 
-		<h1>Star Wars RPG</h1>
-
-		<div class="clearFix">
-
-		<h2 class="selectCharacter">Select Your Character</h2>
-	
-		<h2 class="yourCharacter">Your Character</h2>
-
-		</div>
-
-	<div class="clearFix">
-
-		<h3>Enemies Available to Attack</h3>
-
-		<h3>Fight Section</h3>
-
-		<div><button>Attack</button></div>
-
-		<h3>Defender</h3>
-
-		<footer>Michael K. Morfessis</footer>
+<div class="clearFix">
+<div id="randomNumber" class="wrapperRandom">
+</div>
 
 
-		</div>
+<div id="updateGame" class="wrapperGameUpdate"> 
+</div>
+</div>
 
-		</body>
+<div id="crystals">
+<!-- <img src="#" width="20" height="20">
+<img src="#" width="20" height="20">
+<img src="#" width="20" height="20">
+<img src="#" width="20" height="20"> -->
+
+</div>
+
+<div class="wrapperScore">
+</div>
+
+<div class="wrapperYourScore">
+Counter:
+<div id="yourScore"> 
 
 
-	</html>
+</div>
+</div>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
+
