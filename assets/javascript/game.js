@@ -1,4 +1,4 @@
-var targetNumber = Math.floor(Math.random() * 150) + 21;
+var targetNumber = Math.floor(Math.random() * 90) + 10;
 
 $("#randomNumber").html(targetNumber);
 
@@ -8,19 +8,19 @@ var wins = 0;
 
 var losses = 0;
 
-var numberOptions = [10, 5, 3, 7];
 
 
+for (var i = 1; i < 5; i++) {
 
-for (var i = 0; i < numberOptions.length; i++) {
+	var numberOptions = Math.floor(Math.random() * 9) + 1;
 
 	var imageCrystal = $("<img class='crystalMargin' width='50' height='50'>");
 
 	imageCrystal.addClass("crystal-image");
 
-	imageCrystal.attr("src", "assets/images/crystal1.jpg");
+	imageCrystal.attr("src", "assets/images/crystal" + [i] + ".jpg");
 
-	imageCrystal.attr("data-crystalvalue", numberOptions[i]);
+	imageCrystal.attr("data-crystalvalue", numberOptions);
 
 	$("#crystals").append(imageCrystal)
 
@@ -30,7 +30,7 @@ for (var i = 0; i < numberOptions.length; i++) {
 function resetGame() {
 
 	counter = 0;
-	targetNumber = Math.floor(Math.random() * 150) + 21;
+	targetNumber = Math.floor(Math.random() * 90) + 10;
 
 	$("#randomNumber").html(targetNumber);
 	$("#yourScore").html(counter)
@@ -65,5 +65,7 @@ else if (counter >= targetNumber) {
 else {
 	$("#yourScore").html(counter);
 }
+
+
 
 });
